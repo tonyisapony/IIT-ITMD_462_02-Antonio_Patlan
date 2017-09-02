@@ -1,0 +1,89 @@
+body {
+background: #f9e933;
+}
+
+header, main, footer{
+min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+max-width: 855px;
+margin: auto;
+} 
+ 
+header {
+background: white;
+overflow: auto;
+}
+
+header h1 {
+float: left;
+width: 570px;
+font-family: 'Ubuntu', sans-serif;
+font-size: 43px;
+color green;
+} 
+
+header nav {
+float: left;
+width: 285px;
+}
+
+header a{
+font-family: 'Ubuntu', sans-serif;
+color: blue;
+}
+
+main {
+background: white;
+}
+
+main h2, p, h3, ul {
+float: left;
+width: 570px;
+}
+
+main img {
+float: rigth;
+width: 285px;
+}
+
+main h3, h2{
+font-weight: bold;
+}
+
+footer .contact{
+float: left;
+width: 570px;
+}
+
+footer .sitemap {
+float: right;
+width: 285px;   
+}
+
+/* footer */
+footer .contact{
+font-family: 'Ubuntu', sans-serif;
+font-size: 18px;
+}
+
+footer .sitemap{
+font-family: 'Ubuntu', sans-serif;
+font-size: 18px;
+}
+#RD{
+color: red;
+font-style: italic;
+}
+
+
+
+footer .first-half{
+float: left;
+width: 142.5px;
+}
+footer .second-half{
+float: left;
+width: 142.5px;
+}
