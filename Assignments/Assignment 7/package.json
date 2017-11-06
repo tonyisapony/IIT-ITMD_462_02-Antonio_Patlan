@@ -1,0 +1,16 @@
+{
+  "name": "Assignment6",
+  "version": "0.0.1",
+  "description": "App using a node server that lets users add reminders",
+  "main": "server.js",
+  "scripts": {
+    "test": " ",
+    "start": "npm install then node server.js"
+  },
+  "author": "Antonio Patlan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}

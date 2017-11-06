@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Reminder Notepad</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body>
+      <header class="container-fluid">
+        <h1>Reminder Notepad</h1>
+        <h2>Need to remember something later? Write it down here.</h2>
+      </header>
+    <main>
+      
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active clear"><a href="#adduser" aria-controls="adduser" role="tab" data-toggle="tab" class="clear">Add A User</a></li>
+          <li role="presentation" ><a href="#searchuser" aria-controls="searchuser" role="tab" data-toggle="tab"  class="clear">Search For User</a></li>
+          <li role="presentation"><a href="#deleteuser" aria-controls="deleteuser" role="tab" data-toggle="tab"  class="clear">Delete User</a></li>
+          <li role="presentation"><a href="#addreminder" aria-controls="addreminder" role="tab" data-toggle="tab"  class="clear">Add New Reminder</a></li>
+          <li role="presentation"><a href="#viewreminders" aria-controls="viewreminders" role="tab" data-toggle="tab"  class="clear">View User's Reminders</a></li>
+          <li role="presentation"><a href="#searchreminder" aria-controls="searchreminder" role="tab" data-toggle="tab"  class="clear">Search For Reminder</a></li>
+          <li role="presentation"><a href="#deletereminder" aria-controls="deletereminder" role="tab" data-toggle="tab"  class="clear">Delete Reminder</a></li>
+          <li role="presentation"><a href="#deleteall" aria-controls="deleteall" role="tab" data-toggle="tab"  class="clear">Delete All Reminders</a></li>
+        </ul>
+
+        <div class="tab-content">
+          
+      <div role="tabpanel" class="tab-pane active" id="adduser">
+          <p>
+            Hello! Here you can add a new user. Please input a name and email for the user that is being added.
+          </p>
+         Name:<input type="text" placeholder="John" class="addname input" />
+         Email:<input type="text" placeholder="jstudent@example.com" class="addemail input" />
+          <button>Add User</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="searchuser">
+          <p>Here you can search for a user using their userID. Please enter the userID you would like to search for. </p>
+        userID:<input type="text" placeholder="12" class="searchuser input"/>
+        <button>Search</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="deleteuser">
+        <p>Here you can delete a user based on user ID. Please Note: Deleting a user will delete any reminders for that user and cannot be undone. Please enter userID.</p>
+        userID:<input type="text" placeholder="1" class="deluserid input" />
+        <button>Delete</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="addreminder">
+        <p>
+          Here you can add a new reminder for a user. Please add a title and description as well as the userID you would like add it too.
+        </p>
+        Title:<input type="text" placeholder="Go to the Store" class="addtitle input" />
+        Description:<input type="text" placeholder="Pick up apple, oranges and bears, oh my." class="adddes input"/>
+        userID:<input type="text" placeholder="5" class="userid input"/>
+        <button>Add Reminder</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="viewreminders">
+        <p>Here you can view all the reminders of a user using their userID. Please enter the userID you would like to look at.</p>
+        userID:<input type="text" placeholder="12" class="viewreminder input"/>
+        <button>View Reminders</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="searchreminder">
+        <p>Here you can search for a user's reminder based on reminder ID. Please enter userID along with the reminderID.</p>
+        userID:<input type="text" placeholder="1" class="search input" />
+        reminderID:<input type="text" placeholder="2" class="searchrem input" />
+        <button>Search</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="deletereminder">
+        <p>Here you can delete a user's reminder based on reminder ID. Please Note: This can not be undone. Please enter userID and reminderID. \</p>
+        userID:<input type="text" placeholder="1" class="deluser input" />
+        reminderID:<input type="text" placeholder="2" class="delremid input" />
+        <button>Delete</button>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="deleteall">
+        <p>Here you can delete all of a user's reminders based on user ID. Please Note: this can not be undone. Please enter userID.</p>
+        userID:<input type="text" placeholder="1" class="delall input" />
+        <button>Delete</button>
+      </div>
+      </div>
+      <div class="output">
+      </div>
+    </main>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+  </body>
+</html>
